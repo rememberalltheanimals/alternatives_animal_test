@@ -1,0 +1,32 @@
+
+
+#intro-statement {
+  width: 30rem;
+  margin-left: 3rem;
+  margin-bottom: 5rem
+}
+#lead {
+  width: 80%;
+}
+#description {
+  width: 100%;
+}
+
+#further-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4em;
+  background-color: white;
+  padding: 2em;
+}
+
+.added-message {
+  display: grid;
+  grid-template-columns: max-content 30rem;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+.added-message img {
+  width: 150px;
+}

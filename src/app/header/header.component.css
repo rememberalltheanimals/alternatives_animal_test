@@ -1,0 +1,35 @@
+header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(min-content, max-content);
+  gap: 1em;
+  padding: 1em;
+  background-color: #b6d7a8;
+  box-shadow: 0px 0px 4px 1px rgb(82, 112, 64);
+}
+
+nav a, nav a:visited, button {
+  height: min-content;
+  width: min-content;
+  padding: .5em;
+  background-color: aliceblue;
+  color: black;
+  border: none;
+  border-radius: .5em;
+  text-decoration: none;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  border-radius: .5em;
+}
+
+#app-title {
+  margin: 0;
+}
+
+#login-button {
+  float: right;
+}
