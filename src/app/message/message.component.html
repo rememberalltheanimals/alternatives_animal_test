@@ -1,0 +1,31 @@
+<h2>My Posts</h2>
+<ul class="messages">
+  <li *ngFor="let message of messages">
+    <button [class.selected]="message === selectedMessage" type="button" (click)="onSelect(message)">
+      <span class="postOrder">{{message.id}}</span>
+      <span class="post">{{message.text}}</span>
+    </button>
+  </li>
+</ul>
+
+<app-message-detail [message]="selectedMessage"></app-message-detail>
+
+<!-- <div *ngIf="selectedMessage">
+  <h2>{{selectedMessage.text | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedMessage.id}}</div>
+<div>
+  <label for="text">Post: </label>
+  <input id="text" [(ngModel)]="selectedMessage.text" placeholder="Write your text">
+</div>
+</div> -->
+
+
+
+
+<div>
+  <textarea name="input" id="in" cols="30" rows="10" placeholder="Write a post"></textarea>
+  <button type="submit" id="submit" >Submit</button>
+  <button type="button" id="edit">Edit</button>
+  <button type="button" id="delete">Delete</button>
+</div>
+
